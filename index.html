@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Responsive</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Destinos destacados</h1>
+        <p>Explora lugares increíbles para tu próximo viaje.</p>
+    </header>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- DESTINOS -->
+        <section class="destinos-section">
+            <div class="destinos">
+                <!-- TARJETA 1 -->
+                <article class="destino-card">
+                    <div class="card-imagen">
+                        <img src="static/img/background.png" alt="background">
+                    </div>
+                    <div class="card-contenido">
+                        <h3>Torres del Paine</h3>
+                        <p class="pais">Chile</p>
+                        <p class="descripcion"> Naturaleza y paisajes únicos en la Patagonia.</p>
+                        </p>
+                        <button class="btn-ver-mas">Ver más</button>
+                    </div>
+                </article>
+                <!-- TARJETA 2 -->
+                <article class="destino-card">
+                    <div class="card-imagen">
+                        <img src="static/img/background.png" alt="background">
+                    </div>
+                    <div class="card-contenido">
+                        <h3>Cusco</h3>
+                        <p class="pais">Perú</p>
+                        <p class="descripcion">Cultura, historia y tradiciones.</p>
+                        <button class="btn-ver-mas">Ver más</button>
+                    </div>
+                </article>
+                <!-- TARJETA 3 -->
+                <article class="destino-card">
+                    <div class="card-imagen cancun">
+                        <span>IMAGEN</span>
+                    </div>
+                    <div class="card-contenido">
+                        <p class="pais">
+                            México
+                        </p>
+                        <h3>
+                            Cancún
+                        </h3>
+                        <p class="descripcion">
+                            Playas, naturaleza y descanso
+                            frente al mar.
+                        </p>
+                        <p class="extra-info oculto">
+                            Excelente alternativa para disfrutar
+                            del Caribe y sus playas.
+                        </p>
+                        <button class="btn-ver-mas">
+                            Ver más
+                        </button>
+                    </div>
+                </article>
+                <!-- TARJETA 4 -->
+                <article class="destino-card">
+                    <div class="card-imagen madrid">
+                        <span>IMAGEN</span>
+                    </div>
+                    <div class="card-contenido">
+                        <p class="pais">
+                            España
+                        </p>
+                        <h3>
+                            Madrid
+                        </h3>
+                        <p class="descripcion">
+                            Cultura, gastronomía y vida urbana.
+                        </p>
+                        <p class="extra-info oculto">
+                            Museos, plazas, gastronomía y una
+                            gran variedad de actividades.
+                        </p>
+                        <button class="btn-ver-mas">
+                            Ver más
+                        </button>
+                    </div>
+                </article>
+            </div>
+            <p
+                id="mensajeBusqueda"
+                class="mensaje-busqueda"
+            ></p>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer"></footer>
+    <script src="static/js/script.js"></script>
+</body>
+</html>

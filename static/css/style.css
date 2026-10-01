@@ -1,0 +1,159 @@
+/* ================================
+   RESET BÁSICO
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: #f5f5f5;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.header {
+    width: 100%;
+    padding: 60px 50px;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+/* ================================
+   MAIN
+================================ */
+
+main {
+    width: 100%;
+}
+
+/* ================================
+   DESTINOS
+================================ */
+
+.destinos-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+/* CONTENEDOR TARJETAS */
+
+.destinos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* TARJETA */
+
+.destino-card {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #0000003f;
+    /*
+        El ancho base es 230px.
+        El elemento puede crecer y reducirse.
+    */
+    padding: 10px;
+    flex: 1 1 230px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* IMAGEN TARJETA */
+
+.card-imagen {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+.card-imagen img {
+    width: 90%;
+    border: 1px solid rgba(2, 2, 2, 0.301);
+    border-radius: 5px;
+}
+/* CONTENIDO */
+
+.card-contenido {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    flex-grow: 1;
+}
+
+.card-contenido h3 {
+    font-size: 1.6rem;
+}
+
+.pais {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+.descripcion {
+    margin-top: 20px;
+    color: rgb(0, 0, 0, 0.7);
+    font-size: 1.3rem;
+}
+
+
+/* BOTÓN VER MÁS */
+
+.btn-ver-mas {
+    align-self: flex-start;
+    margin-top: 30px;
+    height: 50px;
+    width: 100%;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-ver-mas:hover {
+    opacity: 0.9;
+    scale: 1.01;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+}
+
+/*
+    La responsividad depende principalmente de:
+
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
+    min-width;
+    max-width;
+    width: 100%;
+    gap;
+*/
